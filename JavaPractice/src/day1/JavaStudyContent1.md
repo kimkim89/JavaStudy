@@ -25,11 +25,11 @@ JAVA STUDY – DAY1
 	A1: 상위 버전의 바이트코드는 하위 버전의 자바 프로그램을 실행할 수 없음.   
 		하지만, 자바 8버전의 클래스를 상위 자바 버전으로 컴파일할 수 있음.   
 			→ ex: java.lang.UnsupportedClassVersionError: Hello has been compiled by a more recent version of the Java Runtime…    
-		*만약 자바 컴파일할 때 javac 옵션을 준다면 호환 가능  
+		만약 자바 컴파일할 때 javac 옵션을 준다면 호환 가능  
 		→ javac 옵션: -source(소스파일 자바 버전 지정), -target(타켓파일 자바 버전 지정)    
 
    [Practice1] 자바 11버전으로 컴파일: Hello.java → Hello.class  
-   *important : Hello.java 파일에 package가 지정되어 있다면 package가 지정된 상위 폴더에서 실행  
+   -> important : Hello.java 파일에 package가 지정되어 있다면 package가 지정된 상위 폴더에서 실행  
   → java package명.파일이름  
 
 <img src="https://user-images.githubusercontent.com/67870203/129137326-b587bddf-c5cf-4f36-9866-7dcfa985efc4.png"/>
@@ -44,11 +44,12 @@ JAVA STUDY – DAY1
 3.	바이트코드란 무엇인가?
    - Java Class 파일 안에 들어있음
 
-   [Practice3] 바이트코드를 javap라는 명령어로 보면 우리가 읽을 수 있는 형태로 해석해서 보여줌  
-   *노란색 박스: OP코드 = Operation Code   
- -> 하나의 바이트로 만들어져 있음 (하나의 바이트니까 28=256개 만들 수 있음)  
+   [Practice3] 바이트코드를 javap라는 명령어로 보면 우리가 읽을 수 있는 형태로 해석해서 보여줌
+     
+   	노란색 박스: OP코드 = Operation Code
+   -> 하나의 바이트로 만들어져 있음 (하나의 바이트니까 28=256개 만들 수 있음)  
  -> 대략 200개의 명령어가 있음 (ex: getstatic, ldx, invokevirtual 등)  
-   *OP코드가 0: getstatic / 3: ldx / 5: invokevirtual / 8: return 처럼 텍스트로 보이는 이유: javap -c 옵션을 사용해서 해석됨   
+   	OP코드가 0: getstatic / 3: ldx / 5: invokevirtual / 8: return 처럼 텍스트로 보이는 이유: javap -c 옵션을 사용해서 해석됨   
 
 <img src="https://user-images.githubusercontent.com/67870203/129140721-f2b8a0ba-d2f9-402f-95e5-22c1e27ad5ae.png" />
 
@@ -122,7 +123,7 @@ JAVA STUDY – DAY1
 참고사이트6: https://poetic-code.tistory.com/118   
 
 
-6.	JDK와 JRE의 차이  
+6. JDK와 JRE의 차이  
   (1) JDK(Java Development Kit) : 자바 개발 도구, 자바 언어로 프로그램 개발 시 설치 필수  
    	- 자바 9버전부터 JRE 따로 배포하지 않고 JDK만 제공함  
 	→ javac 명령어: compile함, 개발할 때 필요하므로 JDK에 들어있음  
