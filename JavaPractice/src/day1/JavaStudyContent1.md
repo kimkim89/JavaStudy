@@ -36,9 +36,7 @@ JAVA STUDY – DAY1
 <img src="https://user-images.githubusercontent.com/67870203/129140613-d33b05fd-bb49-4615-af65-a88b93d32d62.png"/>
 	
    [Practice2] 자바 11버전으로 컴파일 하면서 javac option인 -source와 -target을 사용하여 자바 1.8 버전에서도 호환되도록 함	  
-<img src="https://user-images.githubusercontent.com/67870203/129140688-01586a09-093a-426e-94bd-3ae0d02f6e3a.png">   
-   
-   
+<img src="https://user-images.githubusercontent.com/67870203/129140688-01586a09-093a-426e-94bd-3ae0d02f6e3a.png">     
 	참고 사이트1: https://as-i-am-programing.tistory.com/2 
 	참고 사이트2: https://gocoder.tistory.com/1491
 
@@ -48,19 +46,19 @@ JAVA STUDY – DAY1
 
    [Practice3] 바이트코드를 javap라는 명령어로 보면 우리가 읽을 수 있는 형태로 해석해서 보여줌  
    *노란색 박스: OP코드 = Operation Code   
- → 하나의 바이트로 만들어져 있음 (하나의 바이트니까 28=256개 만들 수 있음)  
- → 대략 200개의 명령어가 있음 (ex: getstatic, ldx, invokevirtual 등)  
+ -> 하나의 바이트로 만들어져 있음 (하나의 바이트니까 28=256개 만들 수 있음)  
+ -> 대략 200개의 명령어가 있음 (ex: getstatic, ldx, invokevirtual 등)  
    *OP코드가 0: getstatic / 3: ldx / 5: invokevirtual / 8: return 처럼 텍스트로 보이는 이유: javap -c 옵션을 사용해서 해석됨   
 
 <img src="https://user-images.githubusercontent.com/67870203/129140721-f2b8a0ba-d2f9-402f-95e5-22c1e27ad5ae.png" />
 
 
 
-4.	JIT 컴파일러란 무엇이며 어떻게 동작하는지?
-  - 자바를 사용해서 실행할 때 필요함
-  - 반복되는 코드가 있다면 그 코드를 JIT 컴파일러가 기계어로 변환해서 캐싱 해놓고 재사용하면서 반복되던 코드를 인터프리터가 재해석할 필요가 없어져서 속도가 빨라짐
-  - JIT컴파일러는 일종의 스레드로 인터프리터와 동시에 동작
-  - JIT컴파일러는 JVM의 RUNTIME영역에 들어있음
+4.	JIT 컴파일러란 무엇이며 어떻게 동작하는지?  
+  	- 자바를 사용해서 실행할 때 필요함  
+  	- 반복되는 코드가 있다면 그 코드를 JIT 컴파일러가 기계어로 변환해서 캐싱 해놓고 재사용하면서 반복되던 코드를 인터프리터가 재해석할 필요가 없어져서 속도가 빨라짐  
+  	- JIT컴파일러는 일종의 스레드로 인터프리터와 동시에 동작  
+  	- JIT컴파일러는 JVM의 RUNTIME영역에 들어있음  
 
 5.	JVM 구성 요소
   (1) Class Loader  
@@ -69,11 +67,11 @@ JAVA STUDY – DAY1
 	- Loading(클래스 읽기) → Linking(레퍼런스 연결) → Initialization(초기화) 단계로 동작  
 	- Runtime 단계에서 컴파일된 자바 바이트코드를 Execution Engine이 실행하면서 Runtime Data Area에 로드함  
 			
-	[Class Loader 종류]
-	①	부트스트랩 클래스 로드: 자바 API 로드
-	②	익스텐션 클래스 로드: 기본 자바 API를 제외한 확장 API 로드
-	③	시스템 클래스 로드: CLASSPATH에 정의된 클래스 로드
-	④	사용자 정의 클래스: 개발자가 직접 코드상에 생성한 클래스 로드
+	[Class Loader 종류]  
+	①	부트스트랩 클래스 로드: 자바 API 로드  
+	②	익스텐션 클래스 로드: 기본 자바 API를 제외한 확장 API 로드  
+	③	시스템 클래스 로드: CLASSPATH에 정의된 클래스 로드  
+	④	사용자 정의 클래스: 개발자가 직접 코드상에 생성한 클래스 로드  
 
   (2) Execution Engine
 	- .class파일을 실행시키는 역할  
@@ -87,6 +85,7 @@ JAVA STUDY – DAY1
 
   (3) Runtime Data Area  
 	- JVM이 프로그램 수행을 위해 OS로부터 할당 받는 메모리 영역     
+	
 		[Runtime Data Area 종류]  
 	①	PC Register :   
 		- 스레드에 실행될 명령어 기록하는 부분
@@ -123,7 +122,7 @@ JAVA STUDY – DAY1
 참고사이트6: https://poetic-code.tistory.com/118   
 
 
-6.	JDK와 JRE의 차이
+6.	JDK와 JRE의 차이  
   (1) JDK(Java Development Kit) : 자바 개발 도구, 자바 언어로 프로그램 개발 시 설치 필수  
    	- 자바 9버전부터 JRE 따로 배포하지 않고 JDK만 제공함  
 	→ javac 명령어: compile함, 개발할 때 필요하므로 JDK에 들어있음  
