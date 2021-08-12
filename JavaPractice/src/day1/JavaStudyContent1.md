@@ -68,7 +68,7 @@ JAVA STUDY – DAY1
 	- 필요할 때마다 동적으로 클래스 파일을 로딩함
 	- Loading(클래스 읽기) → Linking(레퍼런스 연결) → Initialization(초기화) 단계로 동작
 	- Runtime 단계에서 컴파일된 자바 바이트코드를 Execution Engine이 실행하면서 Runtime Data Area에 로드함
-	<br>		
+			
 	[Class Loader 종류]
 	①	부트스트랩 클래스 로드: 자바 API 로드
 	②	익스텐션 클래스 로드: 기본 자바 API를 제외한 확장 API 로드
@@ -80,35 +80,35 @@ JAVA STUDY – DAY1
 	- 메서드를 실행하는 실행 엔진
 	- Class Loader가 JVM Runtime에 bytecode 올린 후 Execution Engine이 해당 bytecode 실행함
 	- 실행 엔진은 bytecode를 명령어 단위로 읽어서 실행
-	<br>
+	
 	[실행 방식]
 	① Interpreter : 한 줄씩 해석 후 실행, 속도 느림
 	② JIT Compiler : bytecode를 nativecode로 변경 후 실행, 실행 속도 빠름
 
   (3) Runtime Data Area
-	- JVM이 프로그램 수행을 위해 OS로부터 할당 받는 메모리 영역 <br>
+	- JVM이 프로그램 수행을 위해 OS로부터 할당 받는 메모리 영역 
 		[Runtime Data Area 종류]
 	①	PC Register : 
 		- 스레드에 실행될 명령어 기록하는 부분
 		- 현재 수행 중인 JVM 명령의 주소를 저장
-		- 스레드마다 하나씩 생성  <br>
+		- 스레드마다 하나씩 생성 
 	②	JVM Stack :
 		- Stack Frame 구조체 저장
 		- 스레드의 메서드가 호출될 때 수행 정보(메서드 호출 주소, 매개변수, 지역변수, 연산 스택)가 프레임 단위로 JVM Stack에 저장됨
 		- 메서드 호출 종료되면 Stack에서 제거됨
-		- 스레드마다 하나씩 생성 <br>
-	③	Native Method Stack : <br>
+		- 스레드마다 하나씩 생성 
+	③	Native Method Stack :
 		- Java 언어 외 다른 언어로 작성된 네이티브 코드를 위한 Stack
-		- 스레드마다 하나씩 생성 <br>
+		- 스레드마다 하나씩 생성
 	④	Heap: 
 		- 모든 객체와 그것들과 연관된 인스턴스 그리고 배열들이 동적으로 저장되는 메모리 영역
 		- GC가 Heap 메모리 영역 관리해줌
-		- 모든 스레드가 공유(GC 대상 영역) <br>
+		- 모든 스레드가 공유(GC 대상 영역) 
 	⑤	Method Area : 
 		- JVM에 의해 읽어진 모든 클래스와 인터페이스에 대한 런타임 상수 풀, 필드, 메서드 코드 ,정적 변수, 메서드의 바이트코드 등이 보관됨 
 		- 모든 스레드가 공유(GC 대상 영역)
 			
-	*GC(Garbage Collector) : <br>
+	*GC(Garbage Collector) : 
 		- 더 이상 참조되지 않는 메모리를 자동으로 정리해줌
 	
 	[각 영역에 저장되는 값]
