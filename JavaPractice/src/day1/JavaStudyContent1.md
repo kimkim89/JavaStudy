@@ -19,13 +19,13 @@ JAVA STUDY – DAY1
 
 
 2.	컴파일 하는 방법 및 실행하는 방법  
-	자바 14버전으로 Hello.java라는 파일을 컴파일 할 경우, Hello.class라는 파일로 변환됨  
 
+	자바 14버전으로 Hello.java라는 파일을 컴파일 할 경우, Hello.class라는 파일로 변환됨  
 	   [Questions]  
 		Q1: 자바 14버전으로 컴파일한 Hello.class를 자바 8버전으로 실행할 경우?   
 		A1: 상위 버전의 바이트코드는 하위 버전의 자바 프로그램을 실행할 수 없음.   
 			하지만, 자바 8버전의 클래스를 상위 자바 버전으로 컴파일할 수 있음.   
-				→ ex: java.lang.UnsupportedClassVersionError: Hello has been compiled by a more recent version of the Java Runtime…    
+			→ ex: java.lang.UnsupportedClassVersionError: Hello has been compiled by a more recent version of the Java Runtime…    
 			만약 자바 컴파일할 때 javac 옵션을 준다면 호환 가능  
 			→ javac 옵션: -source(소스파일 자바 버전 지정), -target(타켓파일 자바 버전 지정)    
 
