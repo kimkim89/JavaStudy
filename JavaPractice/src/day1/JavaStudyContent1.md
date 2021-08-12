@@ -29,7 +29,7 @@ JAVA STUDY – DAY1
    *important : Hello.java 파일에 package가 지정되어 있다면 package가 지정된 상위 폴더에서 실행!
   → java package명.파일이름
 
-    <img width="100%" src="https://user-images.githubusercontent.com/67870203/129137326-b587bddf-c5cf-4f36-9866-7dcfa985efc4.png"/>
+    <img src="https://user-images.githubusercontent.com/67870203/129137326-b587bddf-c5cf-4f36-9866-7dcfa985efc4.png"/>
 
 	
    [Practice2] 자바 11버전으로 컴파일 하면서 javac option인 -source와 -target을 사용하여 자바 1.8 버전에서도 호환되도록 함	
