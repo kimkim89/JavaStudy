@@ -86,41 +86,42 @@ JAVA STUDY – DAY1
 	② JIT Compiler : bytecode를 nativecode로 변경 후 실행, 실행 속도 빠름
 
   (3) Runtime Data Area
-	- JVM이 프로그램 수행을 위해 OS로부터 할당 받는 메모리 영역
+	- JVM이 프로그램 수행을 위해 OS로부터 할당 받는 메모리 영역 <br>
 		[Runtime Data Area 종류]
 	①	PC Register : 
 		- 스레드에 실행될 명령어 기록하는 부분
 		- 현재 수행 중인 JVM 명령의 주소를 저장
-		- 스레드마다 하나씩 생성
+		- 스레드마다 하나씩 생성  <br>
 	②	JVM Stack :
 		- Stack Frame 구조체 저장
 		- 스레드의 메서드가 호출될 때 수행 정보(메서드 호출 주소, 매개변수, 지역변수, 연산 스택)가 프레임 단위로 JVM Stack에 저장됨
 		- 메서드 호출 종료되면 Stack에서 제거됨
-		- 스레드마다 하나씩 생성
-	③	Native Method Stack :
+		- 스레드마다 하나씩 생성 <br>
+	③	Native Method Stack : <br>
 		- Java 언어 외 다른 언어로 작성된 네이티브 코드를 위한 Stack
-		- 스레드마다 하나씩 생성
-	④	Heap:
+		- 스레드마다 하나씩 생성 <br>
+	④	Heap: 
 		- 모든 객체와 그것들과 연관된 인스턴스 그리고 배열들이 동적으로 저장되는 메모리 영역
 		- GC가 Heap 메모리 영역 관리해줌
-		- 모든 스레드가 공유(GC 대상 영역)
-	⑤	Method Area :
+		- 모든 스레드가 공유(GC 대상 영역) <br>
+	⑤	Method Area : 
 		- JVM에 의해 읽어진 모든 클래스와 인터페이스에 대한 런타임 상수 풀, 필드, 메서드 코드 ,정적 변수, 메서드의 바이트코드 등이 보관됨 
 		- 모든 스레드가 공유(GC 대상 영역)
-	*GC(Garbage Collector)
+			
+	*GC(Garbage Collector) : <br>
 		- 더 이상 참조되지 않는 메모리를 자동으로 정리해줌
-	<br>
+	
 	[각 영역에 저장되는 값]
 	 1)	메서드 영역: 클래스, 메서드, 클래스 변수(static), 전역변수
 	 2)	힙 영역: new 연산자를 통해 생성된 객체(인스턴스)
 	 3)	스택 영역: 지역변수, 매개변수, 리턴값, 참조변수
-	<br>
-	참고사이트1: https://coding-nyan.tistory.com/87
-	참고사이트2: https://justin-g.tistory.com/56
-	참고사이트3: https://www.guru99.com/java-virtual-machine-jvm.html 
-	참고사이트4: https://medium.com/@lazysoul/jvm-%EC%9D%B4%EB%9E%80-c142b01571f2 
-	참고사이트5: https://jithub.tistory.com/40 
-	참고사이트6: https://poetic-code.tistory.com/118 
+	
+참고사이트1: https://coding-nyan.tistory.com/87
+참고사이트2: https://justin-g.tistory.com/56
+참고사이트3: https://www.guru99.com/java-virtual-machine-jvm.html 
+참고사이트4: https://medium.com/@lazysoul/jvm-%EC%9D%B4%EB%9E%80-c142b01571f2 
+참고사이트5: https://jithub.tistory.com/40 
+참고사이트6: https://poetic-code.tistory.com/118 
 
 
 6.	JDK와 JRE의 차이
