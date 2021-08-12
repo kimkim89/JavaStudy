@@ -30,10 +30,10 @@ JAVA STUDY – DAY1
   → java package명.파일이름
 
 <img src="https://user-images.githubusercontent.com/67870203/129137326-b587bddf-c5cf-4f36-9866-7dcfa985efc4.png"/>
-
+<img src="https://user-images.githubusercontent.com/67870203/129140613-d33b05fd-bb49-4615-af65-a88b93d32d62.png"/>
 	
    [Practice2] 자바 11버전으로 컴파일 하면서 javac option인 -source와 -target을 사용하여 자바 1.8 버전에서도 호환되도록 함	
-   
+<img src="https://user-images.githubusercontent.com/67870203/129140688-01586a09-093a-426e-94bd-3ae0d02f6e3a.png">   
    
    
 	참고 사이트1: https://as-i-am-programing.tistory.com/2 
@@ -49,7 +49,7 @@ JAVA STUDY – DAY1
  → 대략 200개의 명령어가 있음 (ex: getstatic, ldx, invokevirtual 등)
    *OP코드가 0: getstatic / 3: ldx / 5: invokevirtual / 8: return 처럼 텍스트로 보이는 이유: javap -c 옵션을 사용해서 해석됨 
 
-
+<img src="https://user-images.githubusercontent.com/67870203/129140721-f2b8a0ba-d2f9-402f-95e5-22c1e27ad5ae.png" />
 
 
 
