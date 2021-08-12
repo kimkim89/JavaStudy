@@ -3,13 +3,14 @@ JAVA STUDY – DAY1
 목표: 자바 소스 파일(.java)을 JVM으로 실행하는 과정 이해하기  
 
 1. JVM이란 무엇인가?  
-   JVM(=Java Virtual Machine) : 자바 가상 머신  
-	- 자바 실행 머신  
-	- 시스템 메모리를 관리하면서 자바 기반 애플리케이션을 위해 이식 가능한 실행 환경을 제공  
-	- 한번 작성하면, 어디서든 실행(Write once, run anywhere)  
-	- JVM 덕분에 자바로 작성된 프로그램을 수정하지 않고도 여러가지 운영체제에서 사용 가능  
-	→ Java compiler가 .java파일을 .class라는 bytecode로 변환  
-	→ bytecode는 기계어가 아니므로 OS에서 바로 실행이 되지 않지만, JVM에 의해 OS 상관없이 실행됨   
+
+	   JVM(=Java Virtual Machine) : 자바 가상 머신  
+		- 자바 실행 머신  
+		- 시스템 메모리를 관리하면서 자바 기반 애플리케이션을 위해 이식 가능한 실행 환경을 제공  
+		- 한번 작성하면, 어디서든 실행(Write once, run anywhere)  
+		- JVM 덕분에 자바로 작성된 프로그램을 수정하지 않고도 여러가지 운영체제에서 사용 가능  
+		→ Java compiler가 .java파일을 .class라는 bytecode로 변환  
+		→ bytecode는 기계어가 아니므로 OS에서 바로 실행이 되지 않지만, JVM에 의해 OS 상관없이 실행됨   
 	
 
 	스프링 프레임워크, 스프링 부트 reference 참고 시 최소 자바 8버전 이상부터 사용 가능하도록 되어 있음 
