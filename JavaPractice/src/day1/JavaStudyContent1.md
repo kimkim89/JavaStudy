@@ -4,30 +4,29 @@ JAVA STUDY – DAY1
 
 1. JVM이란 무엇인가?  
 
-	   JVM(=Java Virtual Machine) : 자바 가상 머신  
-		- 자바 실행 머신  
-		- 시스템 메모리를 관리하면서 자바 기반 애플리케이션을 위해 이식 가능한 실행 환경을 제공  
-		- 한번 작성하면, 어디서든 실행(Write once, run anywhere)  
-		- JVM 덕분에 자바로 작성된 프로그램을 수정하지 않고도 여러가지 운영체제에서 사용 가능  
-		→ Java compiler가 .java파일을 .class라는 bytecode로 변환  
-		→ bytecode는 기계어가 아니므로 OS에서 바로 실행이 되지 않지만, JVM에 의해 OS 상관없이 실행됨   
-	
+   JVM(=Java Virtual Machine) : 자바 가상 머신  
+	- 자바 실행 머신  
+	- 시스템 메모리를 관리하면서 자바 기반 애플리케이션을 위해 이식 가능한 실행 환경을 제공  
+	- 한번 작성하면, 어디서든 실행(Write once, run anywhere)  
+	- JVM 덕분에 자바로 작성된 프로그램을 수정하지 않고도 여러가지 운영체제에서 사용 가능  
+	→ Java compiler가 .java파일을 .class라는 bytecode로 변환  
+	→ bytecode는 기계어가 아니므로 OS에서 바로 실행이 되지 않지만, JVM에 의해 OS 상관없이 실행됨   
 
-	스프링 프레임워크, 스프링 부트 reference 참고 시 최소 자바 8버전 이상부터 사용 가능하도록 되어 있음 
-		→ 컴파일할 때 옵션을 줬기 때문에 가능
-		→ Library와 Framework를 제공할 경우 javac 옵션을 필수적으로 알아야함
+스프링 프레임워크, 스프링 부트 reference 참고 시 최소 자바 8버전 이상부터 사용 가능하도록 되어 있음 
+	→ 컴파일할 때 옵션을 줬기 때문에 가능
+	→ Library와 Framework를 제공할 경우 javac 옵션을 필수적으로 알아야함
 
 
 2.	컴파일 하는 방법 및 실행하는 방법  
 
-	자바 14버전으로 Hello.java라는 파일을 컴파일 할 경우, Hello.class라는 파일로 변환됨  
-	   [Questions]  
-		Q1: 자바 14버전으로 컴파일한 Hello.class를 자바 8버전으로 실행할 경우?   
-		A1: 상위 버전의 바이트코드는 하위 버전의 자바 프로그램을 실행할 수 없음.   
-			하지만, 자바 8버전의 클래스를 상위 자바 버전으로 컴파일할 수 있음.   
-			→ ex: java.lang.UnsupportedClassVersionError: Hello has been compiled by a more recent version of the Java Runtime…    
-			만약 자바 컴파일할 때 javac 옵션을 준다면 호환 가능  
-			→ javac 옵션: -source(소스파일 자바 버전 지정), -target(타켓파일 자바 버전 지정)    
+자바 14버전으로 Hello.java라는 파일을 컴파일 할 경우, Hello.class라는 파일로 변환됨  
+   [Questions]  
+	Q1: 자바 14버전으로 컴파일한 Hello.class를 자바 8버전으로 실행할 경우?   
+	A1: 상위 버전의 바이트코드는 하위 버전의 자바 프로그램을 실행할 수 없음.   
+		하지만, 자바 8버전의 클래스를 상위 자바 버전으로 컴파일할 수 있음.   
+		→ ex: java.lang.UnsupportedClassVersionError: Hello has been compiled by a more recent version of the Java Runtime…    
+		만약 자바 컴파일할 때 javac 옵션을 준다면 호환 가능  
+		→ javac 옵션: -source(소스파일 자바 버전 지정), -target(타켓파일 자바 버전 지정)    
 
    [Practice1] 자바 11버전으로 컴파일: Hello.java → Hello.class  
    -> important : Hello.java 파일에 package가 지정되어 있다면 package가 지정된 상위 폴더에서 실행  
@@ -57,10 +56,10 @@ JAVA STUDY – DAY1
 
 4.	JIT 컴파일러란 무엇이며 어떻게 동작하는지?  
 	
-	- 자바를 사용해서 실행할 때 필요함  
-	- 반복되는 코드가 있다면 그 코드를 JIT 컴파일러가 기계어로 변환해서 캐싱 해놓고 재사용하면서 반복되던 코드를 인터프리터가 재해석할 필요가 없어져서 속도가 빨라짐  
-	- JIT컴파일러는 일종의 스레드로 인터프리터와 동시에 동작  
-	- JIT컴파일러는 JVM의 RUNTIME영역에 들어있음  
+- 자바를 사용해서 실행할 때 필요함  
+- 반복되는 코드가 있다면 그 코드를 JIT 컴파일러가 기계어로 변환해서 캐싱 해놓고 재사용하면서 반복되던 코드를 인터프리터가 재해석할 필요가 없어져서 속도가 빨라짐  
+- JIT컴파일러는 일종의 스레드로 인터프리터와 동시에 동작  
+- JIT컴파일러는 JVM의 RUNTIME영역에 들어있음  
 
 5.	JVM 구성 요소
 
@@ -122,6 +121,7 @@ JAVA STUDY – DAY1
 참고사이트4: https://medium.com/@lazysoul/jvm-%EC%9D%B4%EB%9E%80-c142b01571f2   
 참고사이트5: https://jithub.tistory.com/40   
 참고사이트6: https://poetic-code.tistory.com/118   
+ 
 
 
 6. JDK와 JRE의 차이  
@@ -132,3 +132,5 @@ JAVA STUDY – DAY1
 	
 	  (2) JRE(Java Runtime Environment) : 자바 실행 환경, 자바 언어로 작성된 프로그램 실행을 위해 설치  
 		- 자바 9버전부터 JRE 더 이상 만들지 않음
+		
+참고 영상 : https://youtu.be/T7NyR5UvyYo 		
