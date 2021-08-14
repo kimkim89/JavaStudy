@@ -133,4 +133,5 @@ JAVA STUDY – DAY1
 	  (2) JRE(Java Runtime Environment) : 자바 실행 환경, 자바 언어로 작성된 프로그램 실행을 위해 설치  
 		- 자바 9버전부터 JRE 더 이상 만들지 않음
 		
-참고 영상 : https://youtu.be/T7NyR5UvyYo 		
+참고 영상 : https://youtu.be/T7NyR5UvyYo 	
+
