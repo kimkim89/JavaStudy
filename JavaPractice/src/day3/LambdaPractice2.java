@@ -1,5 +1,7 @@
 package day3;
 
+
+/*남궁성의 정석코딩 유튜브 영상 [자바의 정석 - 기초편] ch14-5,6 함수형인터페이스 예제 연습*/
 // #1 함수형 인터페이스 선언
 @FunctionalInterface
 interface MyFunction2 {
