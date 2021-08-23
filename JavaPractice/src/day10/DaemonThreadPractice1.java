@@ -23,9 +23,7 @@ public class DaemonThreadPractice1 implements Runnable{
 		
 		System.out.println("프로그램을 종료합니다.");
 	}
-	
-	
-	
+		
 	/*데몬쓰레드*/
 	// 일반쓰레드가 하나도 없을 때 데몬쓰레드는 자동종료됨.
 	@Override
